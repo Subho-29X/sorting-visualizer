@@ -83,5 +83,3 @@ This project is provided under the MIT License — see LICENSE file for details.
 
 - Built with Create React App.
 - Inspired by many sorting visualizer tutorials and educational tools.
-
-If you want me to customize this README with exact algorithm list, screenshots, usage examples, or contribution guidelines specific to this repository, tell me what to include and I’ll update it.
