@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Sorting Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimal, interactive sorting algorithm visualizer built with React. Use it to learn and demonstrate how common sorting algorithms (bubble sort, selection sort, insertion sort, merge sort, quick sort, heap sort, etc.) operate step-by-step on an array of values. The visualizer animates comparisons, swaps, and array state changes so you can see how each algorithm transforms an array into a sorted sequence.
 
-## Available Scripts
+This project was bootstrapped with Create React App.
 
-In the project directory, you can run:
+## Live preview
 
-### `npm start`
+Run the app locally (instructions below) and open http://localhost:3000 to view the visualizer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Visual animations of array operations: comparisons, swaps, merges.
+- Multiple sorting algorithms to choose from.
+- Adjustable array size and animation speed.
+- Generate new random arrays.
+- Play / pause controls and step-through (if implemented in UI).
+- Responsive, simple UI for focused learning and demos.
 
-### `npm test`
+## Supported algorithms
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+(Example — adjust depending on what your app implements)
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+- Heap Sort
 
-### `npm run build`
+## Quickstart — Install and run locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Make sure Node.js (v14+ recommended) and npm are installed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repo:
+   git clone https://github.com/Subho-29X/sorting-visualizer.git
+2. Change into the project directory:
+   cd sorting-visualizer
+3. Install dependencies:
+   npm install
+4. Start the development server:
+   npm start
+5. Open http://localhost:3000 in your browser. The app reloads automatically when you edit source files.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Available scripts
 
-### `npm run eject`
+In the project directory you can run:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- npm start
+  - Starts the development server and opens the app at http://localhost:3000.
+- npm test
+  - Runs the test runner in interactive watch mode (if tests exist).
+- npm run build
+  - Builds the production-ready app into the build/ directory.
+- npm run eject
+  - Ejects Create React App configuration — one-way operation (only if you need full control).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For more details on these scripts, refer to Create React App docs: https://create-react-app.dev/docs/getting-started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage tips
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Use the slider or input to change array size and watch how algorithm performance and animations scale.
+- Adjust the speed control to slow down or speed up animations for clearer understanding.
+- Generate a new array before running different algorithms to compare behaviors on the same input.
 
-## Learn More
+## Implementation notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Algorithms are typically implemented as generators or as sequences of recorded steps (operations). The UI takes these recorded steps and animates them.
+- Visual state usually highlights the indices being compared and uses a distinct color when elements are swapped or placed in final position.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions, bug reports and suggestions are welcome.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Open an issue to discuss proposed changes or report bugs.
+- Fork the repository, create a feature branch, and open a pull request with a clear description of your change.
+- Keep changes small and focused; include screens or GIFs for UI/animation improvements when possible.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is provided under the MIT License — see LICENSE file for details.
 
-### Making a Progressive Web App
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Built with Create React App.
+- Inspired by many sorting visualizer tutorials and educational tools.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you want me to customize this README with exact algorithm list, screenshots, usage examples, or contribution guidelines specific to this repository, tell me what to include and I’ll update it.
